@@ -1,0 +1,296 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    background-color: rgb(246, 249, 249);
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(45, 57, 80);
+    text-transform: uppercase;
+}
+
+.banner_section {
+    background-image: url("../images/banner.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 87vh;
+    text-align: center;
+    position: relative;
+}
+
+.banner_section h2 {
+    font-size: 5rem;
+    color: rgb(255, 255, 255);
+}
+
+.banner_section p {
+    color: rgb(255, 255, 255);
+}
+
+.banner_section span {
+    display: block;
+    height: 1px;
+    width: 80%;
+    background-color: rgb(21, 164, 250);
+    margin: auto auto 15px;
+}
+
+.btn-custom {
+    border-color: rgb(21, 164, 250);
+    color: rgb(255, 255, 255);
+    background: transparent;
+    padding: 10px 30px;
+    transition: all 0.5s ease-in-out 0s;
+    margin-top: 30px;
+}
+
+.btn-custom:hover {
+    background-color: rgb(21, 164, 250);
+    color: rgb(255, 255, 255);
+}
+
+.btn-custom:focus {
+    box-shadow: none;
+}
+
+.row-position {
+    position: relative;
+    min-height: 87vh;
+}
+
+.col-positio {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+}
+
+.icon {
+    position: absolute;
+    bottom: 20%;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    animation: 2s linear 0s infinite alternate none running updown;
+}
+
+@keyframes updown {
+    0% {
+        bottom: 20%;
+    }
+
+    100% {
+        bottom: 10%;
+        color: rgb(21, 164, 250);
+    }
+}
+
+.simple_text {
+    background-color: rgb(246, 249, 249);
+    color: rgb(45, 57, 80);
+}
+
+.feature_icon {
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    margin: auto;
+    background: linear-gradient(to right, rgb(72, 186, 255) 0%, rgb(72, 186, 255) 50%, rgb(72, 186, 255) 50%, rgb(95, 195, 255) 50%, rgb(95, 195, 255) 50%, rgb(95, 195, 255) 100%);
+}
+
+.feature h2 {
+    font-size: 20px;
+    margin: 10px 0px;
+    color: rgb(45, 57, 80);
+}
+
+.gallery_section {
+    background-color: rgb(246, 249, 249);
+    color: rgb(45, 57, 80);
+}
+
+.gallery_section p {
+    margin-bottom: 50px;
+}
+
+.gallery_item {
+    position: relative;
+}
+
+.gallery_item::before {
+    content: " ";
+    height: 0%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    transition: all 0.5s ease-in-out 0s;
+    background-color: rgb(44, 172, 247);
+    opacity: 0.8;
+}
+
+.gallery_item:hover::before {
+    height: 100%;
+}
+
+.gallery-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    z-index: 9999;
+    transition: all 0.5s ease-in-out 0s;
+    opacity: 0;
+}
+
+.gallery_item:hover .gallery-icon {
+    opacity: 1;
+}
+
+.gallery-icon ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.gallery-icon ul li i {
+    border: 1px solid rgb(255, 255, 255);
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+}
+
+.contact_section {
+    background-image: url("../images/contact-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 513px;
+    position: relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    z-index: 999;
+}
+
+.contact_section::before {
+    content: " ";
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    background-color: #2d3950;
+    opacity: .8;
+    z-index: -1;
+}
+
+.contact_section form input {
+    background: transparent;
+    border: 1px solid rgb(153, 153, 153);
+    color: rgb(153, 153, 153);
+    padding: 8px 10px;
+}
+
+.contact_section textarea {
+    background: transparent;
+    border: 1px solid rgb(153, 153, 153);
+    color: rgb(153, 153, 153);
+    padding: 8px 10px;
+}
+
+.contact_section form input:focus {
+    background: transparent;
+    box-shadow: none;
+    border: 1px solid rgb(153, 153, 153);
+    color: rgb(153, 153, 153);
+}
+
+.contact_section textarea:focus {
+    background: transparent;
+    box-shadow: none;
+    border: 1px solid rgb(153, 153, 153);
+    color: rgb(153, 153, 153);
+}
+
+.checkbox-part input[type="submit"] {
+    border: 1px solid rgb(21, 164, 250);
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+    transition: all 0.5s ease-in-out 0s;
+    padding: 9px 40px;
+}
+
+.checkbox-part input[type="submit"]:hover {
+    background-color: rgb(21, 164, 250);
+}
+
+.checkbox-part {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.chck_box {
+    display: flex;
+    align-items: center;
+}
+
+.chck_box p {
+    margin: 0 0 0 6px;
+}
+.footer_part{
+    background-color: #f6f9f9;
+}
+
+.footer_content {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.footer_content p {
+    margin: 0;
+    color: #999999;
+    font-size: 12px;
+}
+
+.social_midea ul {
+
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.social_midea ul li {
+
+    margin-left: 8px;
+    border: 1px solid rgb(21 164 250);
+    background-color: rgb(21 164 250);
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.social_midea ul li a {
+
+    text-decoration: none;
+    color: #ffff;
+}
